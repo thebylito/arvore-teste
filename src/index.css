@@ -8,6 +8,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  background-color: #d9dde2;
+  width: 590px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+.item {
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  margin: 2px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
