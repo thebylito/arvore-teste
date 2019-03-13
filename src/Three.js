@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { getDateRangeObject } from './funcs';
+import Tooltip from './Tooltip';
 
 class Three extends Component {
   state = {
@@ -58,9 +59,7 @@ class Three extends Component {
       if (count === 0) return '#d7d8d6';
       const res = (count * 100) / max / 100;
       console.log(res);
-      return res > 1
-        ? `rgb(43, 137, 0,1)`
-        : `rgb(43, 137, 0, ${res})`;
+      return res > 1 ? `rgb(43, 137, 0,1)` : `rgb(43, 137, 0, ${res})`;
     };
     //console.log(dates);
     return (
@@ -69,16 +68,18 @@ class Three extends Component {
           <>
             {graph.map((item, i) => {
               return (
-                <div
+                <Tooltip
                   key={i}
-                  className="item"
-                  style={{
-                    backgroundColor: opacity(item.count),
-                  }}
-                  onClick={() => {
-                    console.log(item.date, item.count, opacity(item.count));
-                  }}
-                />
+                  position={'top'}
+                  message={`${item.count} contribuições em ${item.date.toDateString()}`}
+                >
+                  <div
+                    className="item"
+                    style={{
+                      backgroundColor: opacity(item.count),
+                    }}
+                  />
+                </Tooltip>
               );
             })}
           </>
