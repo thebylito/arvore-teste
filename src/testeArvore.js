@@ -1,6 +1,6 @@
 const data = [
-  { date: '2016-10-12', count: 0 },
-  { date: '2016-10-13', count: 1 },
+  { date: '2016-10-12', count: 14 },
+  { date: '2016-10-13', count: 44 },
   { date: '2016-10-14', count: 50 },
   { date: '2016-10-15', count: 48 },
   { date: '2016-10-16', count: 34 },
@@ -171,9 +171,9 @@ const data = [
   { date: '2017-06-02', count: 19 },
   { date: '2017-06-03', count: 42 },
   { date: '2017-06-04', count: 50 },
-  { date: '2017-06-05', count: 0 },
-  { date: '2017-06-06', count: 1 },
-  { date: '2017-06-08', count: 50 },
+  { date: '2017-06-05', count: 13 },
+  { date: '2017-06-06', count: 32 },
+  { date: '2017-06-08', count: 48 },
 ];
 
 export default data;
