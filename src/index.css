@@ -11,7 +11,6 @@ body {
 .container {
   background-color: #d9dde2;
   width: 590px;
-  height: 150px;
   display: flex;
   flex-wrap: wrap;
   padding: 2px;
